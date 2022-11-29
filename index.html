@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+    <title>Connect Four</title>
+</head>
+<body>
+    <!-- name of my game -->
+    <h1> Connect Four</h1>
+
+    <!-- displays the current player, created a span so that in javascript
+    I will be able to tag or get element by ID so that current player can change -->
+    <h2>The current player is:<span id="current-player">1</span> </h2>
+    
+    <!-- added and ID of resutls to do as above, I can add a function that will
+    add up results and winnings of both players availble -->
+    <h3 class="results"></h3>
+
+    <!-- created a button that will be clickable by a function in javascript
+    this will allow to restart by pushing this play again button -->
+    <button class="play-again">Play Again!?</button>
+
+    <!-- created a class of grid so that I could create columns and rows -->
+    <div class="grid">
+
+    <!-- the circles class were created so that I could create the bubbles
+    and adjust where the players would be putting their checkers -->
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+
+
+    
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+
+
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+
+
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+
+
+<!-- separate div of bottom so that javascript bottom can be created to ensure players can only go where on top of something and not anywhere on the board -->
+        <div class="bottom"></div>
+        <div class="bottom"></div>
+        <div class="bottom"></div>
+        <div class="bottom"></div>
+        <div class="bottom"></div>
+        <div class="bottom"></div>
+        <div class="bottom"></div>
+    </div>
+
+
+</body>
+</html>

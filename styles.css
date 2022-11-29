@@ -1,0 +1,47 @@
+/* everything in the body that has text will be in the middle and the background will be lightgray */
+body {
+    background-color: lightgreen;
+    text-align: center;
+}
+
+/* puts my h1 tag centered and changes font */
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ /* this allows me to create my entire grid */
+.grid {
+    border: 1px solid;
+    height: 480px;
+    width: 560px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+
+/* used .gird div because it grabs all the divs inside the grid */
+.grid div {
+    height: 80px;
+    width: 80px;
+}
+
+/* when you hover over an option that a player can choose from you get the color below */
+.grid div:hover{
+    background-color: white;
+}
+
+/* player one connect four color */
+/* used 40px because the height and width of the divs in the grid were 80, halfing it creates the circle */
+.player-one {
+    background-color: red;
+    border-radius: 40px;
+}
+
+/* player two connect four color */
+/* same as above using 40px due to the grid being 80px, cutting it in half allows for the player's color of choice to be circles */
+.player-two {
+    background-color: purple;
+    border-radius: 40px;
+}
