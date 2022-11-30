@@ -16,7 +16,9 @@ h1 {
     height: 480px;
     width: 560px;
     display: flex;
+/* the flex-wrap allows all my divs to wrap in my grid */
     flex-wrap: wrap;
+/* margin auto allows my grid to be in the middle of the page */
     margin: auto;
 }
 
