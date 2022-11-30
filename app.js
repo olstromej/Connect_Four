@@ -1,12 +1,16 @@
 // Assign all my variables and grab them from my DOM/HTML
 const connectFour = document.querySelector('.grid');
-const letsReplay = document.querySelector('.play-again');
+// const letsReplay = document.querySelector('.play-again');
 const winners = document.querySelector('.results');
 const playerMove = document.querySelector('#current-player')
 const squares = document.querySelectorAll('.grid div')
 let currentPlayer = 1
 
-
+function reset() {
+    for(let i = 0; i < winCombosArrays.length; i++) {
+        winCombosArrays[i].innerHTML = '';
+    }
+}
 
 // all winning conditions
 
@@ -39,7 +43,7 @@ const winCombosArrays = [
 
 //    function created to run through the winCombosArray to see if they match either player to decide who wins or loses
 function checkMyBoard() {
-    for(let i = 0; i < winCombosArrays; i++) {
+    for(let i = 0; i < winCombosArrays.length; i++) {
         const option1 = squares[winCombosArrays[i][0]];
         const option2 = squares[winCombosArrays[i][1]];
         const option3 = squares[winCombosArrays[i][2]];
@@ -51,6 +55,7 @@ function checkMyBoard() {
             option4.classList.contains('player-one')
         ){
         winners.innerHTML = "Player One Wins!"
+        reset();
      } if (
             option1.classList.contains('player-two') &&
             option2.classList.contains('player-two') &&
@@ -58,6 +63,7 @@ function checkMyBoard() {
             option4.classList.contains('player-two')
     ){
     winners.innerHTML = "Player Two Wins!"
+    reset();
     }
 }
 }
