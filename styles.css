@@ -1,4 +1,4 @@
-/* everything in the body that has text will be in the middle and the background will be lightgray */
+/* everything in the body that has text will be in the middle and the background will be lightgreen */
 body {
     background-color: lightgreen;
     text-align: center;
@@ -8,6 +8,7 @@ body {
 h1 {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    /* puts a line under the h1 across the entire page */
     border-bottom: 1px solid black;
 }
 
