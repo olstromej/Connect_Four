@@ -1,4 +1,4 @@
-#Connect Four
+# Connect Four
 
 Connect four is a game that has two players. The two players main objective is to align four of their own checkers in a row, anywhere on the board. Each player has their own color checkers. In this game player one has a red checker and player two has a purple checker.
 
