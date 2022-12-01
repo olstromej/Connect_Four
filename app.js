@@ -99,4 +99,3 @@ for (let i = 0; i < squares.length; i++) {
         checkMyBoard();
     }
 }
-

@@ -13,7 +13,7 @@ h1 {
 
  /* this allows me to create my entire grid */
 .grid {
-    border: 3px solid;
+    border: 3px solid black;
     height: 480px;
     width: 560px;
     display: flex;
