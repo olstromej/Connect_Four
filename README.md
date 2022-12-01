@@ -35,3 +35,4 @@ Future additions:
 1. Self Falling Feature- this feature will allow a click on the top of the board and the checker will fall to the bottom
 2. An ability for players to stop playing after the other has won
 3. Color Options- A player will be able to choose his color checker
+4. Update to look better on mobile devices
