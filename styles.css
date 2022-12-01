@@ -12,8 +12,11 @@ h1 {
     border-bottom: 2px solid white;
     color: white;
     border-top: 2px solid white;
+
+/* animation for color change of my h1 */
     animation: color-change 2s infinite; }
 
+/* changes the color of my h1 back and forth from red and yellow */
     @keyframes color-change {
         50% { color: red }
         100% {color: yellow}
@@ -60,7 +63,13 @@ h1 {
 
 h2 {
     color: white;
-}
+    animation: color-change 5s infinite; }
+
+    /* changes the color of my h1 back and forth from red and yellow */
+        @keyframes color-change {
+            50% { color: yellow }
+            100% {color: red}
+    }
 
 h4 {
     color: white;
