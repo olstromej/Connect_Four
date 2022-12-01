@@ -36,3 +36,4 @@ Future additions:
 2. An ability for players to stop playing after the other has won
 3. Color Options- A player will be able to choose his color checker
 4. Update to look better on mobile devices
+5. Add alerts to the page for when someone is trying to go in the wrong place.
