@@ -14,6 +14,7 @@ document.querySelector('#reset')
 })
 
 
+
 // all winning conditions
 
 const winCombosArrays = [
@@ -74,7 +75,7 @@ function checkMyBoard() {
 }
 }
 
-// use a for loop Oto set the bottom of the array
+// use a for loop to set the bottom of the array
 // can only go above where the botttom has been created
 for (let i = 0; i < squares.length; i++) {
     squares[i].onclick = () => {
@@ -93,9 +94,9 @@ for (let i = 0; i < squares.length; i++) {
                 // changes the player back to 1
                 playerMove.innerHTML = currentPlayer
             } 
-        }
+        } 
         // this will call my function
-        checkMyBoard()
+        checkMyBoard();
     }
 }
 
