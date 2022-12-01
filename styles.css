@@ -1,6 +1,6 @@
 /* everything in the body that has text will be in the middle and the background will be lightgreen */
 body {
-    background-color: lightgreen;
+    background-image: url('https://media.istockphoto.com/id/1055107170/vector/retro-80s-futuristic-design-neon-sunset-background-with-laser-grids.jpg?s=612x612&w=0&k=20&c=bEfL325vNGKnvlzGenRCpyY837bO-Zo9y9mmm-Fg7M0=');
     text-align: center;
 }
 
@@ -9,12 +9,19 @@ h1 {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     /* puts a line under the h1 across the entire page */
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid white;
+    color: white;
+    border-top: 2px solid white;
+    animation: color-change 2s infinite; }
+
+    @keyframes color-change {
+        50% { color: red }
+        100% {color: yellow}
 }
 
  /* this allows me to create my entire grid */
 .grid {
-    border: 3px solid black;
+    border: 3px solid white;
     height: 480px;
     width: 560px;
     display: flex;
@@ -47,6 +54,18 @@ h1 {
 /* player two connect four color */
 /* same as above using 40px due to the grid being 80px, cutting it in half allows for the player's color of choice to be circles */
 .player-two {
-    background-color: purple;
+    background-color: yellow;
     border-radius: 40px;
+}
+
+h2 {
+    color: white;
+}
+
+h4 {
+    color: white;
+}
+
+.results {
+    color: white;
 }

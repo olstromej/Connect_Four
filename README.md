@@ -17,13 +17,11 @@ The deployable link can be found below:
 
 Screenshots:
 
-https://i.imgur.com/ZKjKZkc.png
+https://i.imgur.com/MTDYjXw.png
 
-https://i.imgur.com/RvogVG8.png
+https://i.imgur.com/SnBmQCZ.png
 
-https://i.imgur.com/JF8PdcX.png
-
-
+https://i.imgur.com/Y7c8Iuk.png
 
 
 Technology Inovlved in Creation:

@@ -5,6 +5,7 @@ const winners = document.querySelector('.results');
 const playerMove = document.querySelector('#current-player')
 const squares = document.querySelectorAll('.grid div')
 let currentPlayer = 1
+let isGameOver = false
 document.querySelector('#reset')
 
 // create a reset button in the game to utilze to reload the entire game
@@ -44,6 +45,8 @@ const winCombosArrays = [
    ];
    
 
+
+
 //    function created to run through the winCombosArray to see if they match either player to decide who wins or loses
 function checkMyBoard() {
     for(let i = 0; i < winCombosArrays.length; i++) {
@@ -51,17 +54,17 @@ function checkMyBoard() {
         const option2 = squares[winCombosArrays[i][1]];
         const option3 = squares[winCombosArrays[i][2]];
         const option4 = squares[winCombosArrays[i][3]];
-
+isGameOver = true;
 // if any of the four options above are in relation to a classlist that contains player one
         if (
             option1.classList.contains('player-one') &&
             option2.classList.contains('player-one') &&
             option3.classList.contains('player-one') &&
             option4.classList.contains('player-one')
-        ){
-// player one will log in the HTML if the above condition is met
-        winners.innerHTML = "Player One Wins!"
-
+            ){
+            winners.innerHTML = "Player One Wins!"
+            
+            // player one will log in the HTML if the above condition is met
 // if any of the four options below are in relation to a classlist that contains player two
      } if (
             option1.classList.contains('player-two') &&
@@ -71,6 +74,7 @@ function checkMyBoard() {
     ){
 // player two will populat in the HTML if the above condition is met
     winners.innerHTML = "Player Two Wins!"
+    
     }
 }
 }
