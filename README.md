@@ -10,7 +10,7 @@ After doing research I found that their are over 4,531,985,219,092 positions ava
 
 The deployable link can be found below:
 
-
+https://olstromej.github.io/Connect_Four/
 
 
 
